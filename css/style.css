@@ -81,6 +81,7 @@ header{
     padding-left: 0;
     padding-top: 12px;
 }
+
 /* HERO */
 .hero{
     background-color: #b4d0e7;
@@ -92,7 +93,29 @@ header{
 .hero .container .row:last-child{
     margin-top: 40px;
 }
+.hero-icon{
+    font-size: 40px;
+    margin-top: auto;
+}
+.hero-details{
+    display: flex;
+    flex-direction: column;
+    gap:22px;
+    align-items: flex-start;
+}
+.hero-details > *{
+    margin-left: 0;
+}
 
+/* BTN-STYLE */
+.btn{
+    display: inline-block;
+    background-color:#0061ff;
+    color:#f5f5f5;
+    line-height: 45px;
+    padding: 0 16px;
+    text-align: center;
+}
 /* DEBUG */
 .debug > *.container{
     border: 2px solid blue;
