@@ -48,6 +48,9 @@ header{
     flex-wrap: wrap;
     row-gap: 50px;
 }
+.row > *{
+    padding: 0 25px;
+}
 .col-100{
     max-width: 100%;
 }
@@ -121,6 +124,11 @@ header{
     margin-left: 0;
     margin-top: 40px;
 }
+.purchase-plans .card{
+    border: 1px solid #000000;
+}
+/* USER-LIST */
+
 /* BTN-STYLE */
 .btn{
     display: inline-block;
