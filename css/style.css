@@ -9,6 +9,7 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 0;
 }
 html{
     font-family: "Open Sans", sans-serif;
@@ -32,7 +33,6 @@ header{
 .full-container{
     max-width: 100%;
     margin: 0 auto;
-
 }
 .container{
     max-width: 1200px;
@@ -46,23 +46,50 @@ header{
 .row{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 50px;
+}
+.col-100{
+    max-width: 100%;
+}
+.col-33{
+    width: calc(33 * 100% /100);
+}
+.col-66{
+    width:calc(66 * 100% / 100);
 }
 
 /* HEADER */
 .page-header{
-    padding: 18px 4px;
+    padding: 18px 14px;
+    font-size: 14px;
 }
 .nav-bar .row{
    align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .nav-bar .schedule{
     display: flex;
-    align-items: center;
+    align-items:center;
     gap: 12px;
 }
 .nav-bar .schedule a{
     display: block;
     line-height: 34px;
     padding: 0 16px;
+}
+.logo-header{
+    display: block;
+}
+.nav-bar .schedule .logo-header{
+    padding-left: 0;
+}
+/* DEBUG */
+.debug .row{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.debug [class^="col-"]{
+    border: 2px solid cornflowerblue;
+    padding: 20px;
 }
